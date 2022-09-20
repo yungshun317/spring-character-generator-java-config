@@ -3,9 +3,11 @@ package yungshun.chang.springcharactergeneratorjavaconfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ComponentScan("yungshun.chang.springcharactergeneratorjavaconfig")
+@PropertySource("classpath:character.properties")
 public class CharacterGeneratorConfig {
 
     // Define bean for positive personality service

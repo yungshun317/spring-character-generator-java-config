@@ -21,6 +21,10 @@ public class SpringCharacterGeneratorJavaConfigApplication {
         // [4] Call method to get personality
         System.out.println(characterProfile.getPersonality());
 
+        // [6] Call methods with the pros values injected
+        System.out.println(characterProfile.getAge());
+        System.out.println(characterProfile.getSocialClass());
+
         // [5] Close the context
         context.close();
     }
